@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Protótipo: Criptografando Letras</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Protótipo: Criptografando Letras</h1>
+        <p>
+            <strong>Conteúdo:</strong>
+            Introdução à Criptografia e Cifra de César.
+        </p>
+    </header>
+
+    <section>
+        <h2>O que é Criptografia de Letras?</h2>
+
+        <p>
+            A criptografia é uma técnica utilizada para transformar
+            informações, dificultando sua leitura por pessoas não autorizadas.
+            Um dos métodos mais antigos é a <strong>Cifra de César</strong>,
+            que utiliza a substituição de letras.
+        </p>
+
+        <p>
+            <strong>Como funciona?</strong>
+            Cada letra do texto original é deslocada três posições no alfabeto.
+            Por exemplo: A vira D, B vira E, C vira F e Z vira C.
+        </p>
+
+        <p>
+            Este protótipo tem finalidade educativa e não deve ser utilizado
+            para proteger informações confidenciais.
+        </p>
+    </section>
+
+    <div class="interactive-box">
+        <h2>Teste o Protótipo</h2>
+
+        <p>
+            Digite uma mensagem abaixo para ver a criptografia funcionando.
+        </p>
+
+        <label for="inputText">Mensagem original:</label>
+
+        <input
+            type="text"
+            id="inputText"
+            placeholder="Digite aqui (ex.: TEXTO)"
+            autocomplete="off"
+        >
+
+        <button type="button" id="encryptButton">
+            Criptografar Mensagem
+        </button>
+
+        <div id="output" class="result" hidden aria-live="polite">
+            <strong>Texto criptografado:</strong>
+            <span id="outputText"></span>
+        </div>
+    </div>
+
+    <section>
+        <h2>Explicação do Código Desenvolvido</h2>
+
+        <p>
+            Para desenvolver este protótipo, utilizamos JavaScript
+            para implementar a lógica da Cifra de César.
+        </p>
+
+        <ul>
+            <li>
+                Capturamos o texto digitado usando
+                <code>getElementById()</code>.
+            </li>
+            <li>
+                Convertemos as letras para maiúsculas.
+            </li>
+            <li>
+                Percorremos os caracteres utilizando um laço
+                de repetição <code>for</code>.
+            </li>
+            <li>
+                Deslocamos cada letra três posições no alfabeto.
+            </li>
+            <li>
+                Utilizamos o operador de resto da divisão para
+                retornar ao início do alfabeto quando necessário.
+            </li>
+            <li>
+                Mantemos espaços, números e sinais de pontuação.
+            </li>
+            <li>
+                Exibimos o resultado dinamicamente na página.
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Atividade prática: Introdução à Criptografia.</p>
+    </footer>
+
+</body>
+</html>
